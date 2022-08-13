@@ -5,35 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <title>Mi Horario</title>
   </head>
   <body>
     <header>
+      <!-- NAVBAR -->
       <nav class="navbar">
         <div class="logo">
-          <a href="#">
+          <a href="#portada">
             <h1>Logo</h1>
           </a>
         </div>
         <ul class="enlaces">
-          <li><a href="#">Facultad</a></li>
+          <li><a href="#portada">Inicio</a></li>
+          <li><a href="#materias">Facultad</a></li>
           <li><a href="#">Cursos</a></li>
         </ul>
       </nav>
-      <div class="portada">
+
+      <!-- PORTADA -->
+      <div class="portada" id="portada">
         <div class="texto">
-          <h1 class="titulo">Mi Cursada</h1>
+          <h1 class="titulo-principal">Mi Cursada</h1>
           <p class="descripcion">
             En esta página se encuentran links relacionados con la cursada del
             año 2022.
           </p>
         </div>
         <div class="imagen">
-          <img src="https://picsum.photos/id/1060/600/400" alt="" />
+          <img src="./img/portada.jpg" alt="Portada" />
         </div>
       </div>
     </header>
-    <main></main>
+
+    <main>
+      <!-- MATERIAS FACULTAD-->
+      <div id="materias">
+        <section class="materia">
+          <div class="contenido">
+            <div class="titulo">
+              <h1>Aplicaciones de Base de Datos II</h1>
+            </div>
+            <div class="horario">
+              <ul>
+                <li>Miércoles 17 a 19 hs <span class="tipo">Teoría</span></li>
+                <li>
+                  Jueves 16:30 a 18:30 hs <span class="tipo">Práctica</span>
+                </li>
+              </ul>
+            </div>
+            <div class="recursos">
+              <ul>
+                <li>
+                  <a
+                    href="https://virtual.unju.edu.ar/course/view.php?id=57"
+                    target="_blank"
+                    >Aula Virtual</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="imagen-materia">
+            <img src="./img/BD2.jpg" alt="Base de Datos 2" />
+          </div>
+        </section>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
